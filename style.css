@@ -1,3 +1,8 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
 h1 {
     text-align: center;
 }
@@ -6,28 +11,83 @@ h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
+
 }
 
-input[type=text] {
-    position: absolute;
-    width: 130px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
+
+.search {
+    float: right;
+    padding: 7px;
+    margin-top: 8px;
+    margin-right: 26px;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .search {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+        border: 1px solid #ccc;
+    }
+}
+
+
+body {
+    background-color: #E3E3E3;
+    font-size: 12px;
+}
+
+.sigin-heading {
+    color: #4f4f4f;
+    font-family: "BebasNeue", sans-serif;
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+
+}
+
+.form-signin {
     font-size: 16px;
-    background-color: white;
-    background-image: url('searchicon.png');
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-    right: 0;
+    size: 100;
+    right: 0px;
 }
 
-input[type=text]:focus {
-    width: 20%;
+#header {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    color: #000000;
+
 }
+
+#header .leftbox {
+    float: left;
+    display: inline;
+}
+
+#header .rightbox {
+    float: right;
+    display: inline;
+    width: 200px;
+}
+
+
+.signin {
+    position: absolute;
+    font-size: 16px;
+
+}
+
+
+
+
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -143,11 +203,28 @@ body {
     }
 }
 
-form {
+
+
+
+
+
+#background {
     position: absolute;
-    right: 40px;
-    width: 1000px;
-    background: url("http://kodyrabatowe.wp.pl/img/ico/search_gr.png") top left no-repeat;
-    height: 30px;
-    padding-left: 25px;
+    width: 75%;
+    height: 350px;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 100px;
+    background: linear-gradient(180deg, #D7DDFF 43.54%, rgba(215, 221, 255, 0) 100%);
+    padding: 50px;
+}
+
+#background>img {
+    margin-top: 50px;
+    width: 90%;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 }
